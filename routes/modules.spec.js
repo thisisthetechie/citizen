@@ -54,7 +54,7 @@ describe('POST /v1/modules/:namespace/:name/:provider/:version', () => {
   it('should register new module with owner information', () =>
     request(app)
       .post(`/v1/modules/${modulePath}`)
-      .field('owner', 'outsideris')
+      .field('owner', 'thisisthetechie')
       .attach('module', 'test/fixture/module.tar.gz')
       .expect('Content-Type', /application\/json/)
       .expect(201)

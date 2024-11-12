@@ -57,7 +57,7 @@ storeTypes.forEach((storeType) => {
             name: 'store-consul',
             provider: 'store-aws',
             version: '0.1.0',
-            owner: 'outsideris',
+            owner: 'thisisthetechie',
           });
 
           expect(result.id).to.exist;
@@ -72,7 +72,7 @@ storeTypes.forEach((storeType) => {
             name: 'store-consul',
             provider: 'store-aws',
             version: '0.1.0',
-            owner: 'outsideris',
+            owner: 'thisisthetechie',
             definition: {
               root: {
                 path: '',
