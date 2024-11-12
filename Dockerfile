@@ -16,8 +16,8 @@ RUN npm run build:linux
 # final stage
 FROM bitnami/minideb
 
-LABEL maintainer="outsideris@gmail.com"
-LABEL org.opencontainers.image.source = "https://github.com/outsideris/citizen"
+LABEL maintainer="thisis@thetechie.co.uk"
+LABEL org.opencontainers.image.source = "https://github.com/thisisthetechie/citizen"
 
 RUN apt update && apt install -y git jq vim curl
 
