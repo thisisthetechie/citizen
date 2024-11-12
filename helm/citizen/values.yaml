@@ -38,13 +38,13 @@ app_envs:
   # A Google Storage Bucket to save module files only if CITIZEN_STORAGE is gs.
   # CITIZEN_GCP_GS_KEYPATH is set statically in the chart, it is mounted using secret object, you need to put the key
   # In the repo root in order for Helm to use it
-  CITIZEN_STORAGE_BUCKET: atypon-citizen
+  CITIZEN_STORAGE_BUCKET: thisisthetechie-citizen
 
   # A S3 bucket to save module files only if CITIZEN_STORAGE is s3.(And AWS credentials required.)
   # CITIZEN_STORAGE_BUCKET:
   # GitHub token of you enabled the GitHub watcher
   CITIZEN_GITHUB_TOKEN: "Bla"
-  CITIZEN_GITHUB_REPO: "github.com/atypon/terraform-modules.git"
+  CITIZEN_GITHUB_REPO: "github.com/thisisthetechie/terraform-modules.git"
   CITIZEN_GITHUB_MODULES_PATH: "modules"
   CITIZEN_GITHUB_REPO_INTERNAL_ROOT_PATH: "/data/storage"
 
@@ -96,14 +96,14 @@ ingress:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.entrypoints: web
     external-dns.alpha.kubernetes.io/cloudflare-proxied: "true"
-    external-dns.alpha.kubernetes.io/target: devops.atypon.com
-  host: citizen.devops.atypon.com
+    external-dns.alpha.kubernetes.io/target: devops.thisisthetechie.com
+  host: citizen.devops.thisisthetechie.com
   paths:
     - path: /
       pathType: ImplementationSpecific
   tls:
     - hosts:
-        - citizen.devops.atypon.com
+        - citizen.devops.thisisthetechie.com
 
 resources:
    limits:

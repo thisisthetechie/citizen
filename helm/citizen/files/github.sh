@@ -27,7 +27,7 @@ function check() {
 # for testing
 #MODE="GitHub"
 #CITIZEN_GITHUB_TOKEN=""
-#CITIZEN_GITHUB_REPO="github.com/atypon/terraform-gcp.git"
+#CITIZEN_GITHUB_REPO="github.com/thisisthetechie/terraform-gcp.git"
 #CITIZEN_GITHUB_MODULES_PATH="modules"
 #CITIZEN_GITHUB_REPO_INTERNAL_ROOT_PATH="/tmp"
 
